@@ -1,0 +1,19 @@
+{
+  "name": "Node_assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node-gyp rebuild",
+    "start": "node app.js"
+  },
+  "gypfile": true,
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nan": "^2.14.0",
+    "node-gyp": "^5.0.1"
+  }
+}

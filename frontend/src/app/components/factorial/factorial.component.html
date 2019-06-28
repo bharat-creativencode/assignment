@@ -1,0 +1,19 @@
+<div style="text-align:center">
+  <h4>Find Factorial</h4>
+  <form [formGroup]='factorialForm'>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form-group">
+          <input type="number" class="form-control" formControlName="number" placeholder="number">
+          <div class='text-danger' *ngIf="number.touched && number.invalid">Please Enter Number</div>
+        </div>
+      </div>
+    </div>
+    <div class="row" *ngIf="message">
+      <div class="col-md-12">{{message}}</div>
+    </div>
+    <br>
+    <button type="submit" [disabled]="!factorialForm.valid || submitted" class="" (click) = "getFactorial()">Submit</button>
+    <div class="clearfix"></div>
+  </form>
+</div>
