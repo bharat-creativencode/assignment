@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "nan": "^2.14.0",
     "node-gyp": "^5.0.1"
   }
